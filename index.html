@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+
+    <div class="container">
+        <h1 class="heading">TO DO LIST</h1>
+        <div class="view_box">
+            <form class="todoSreachId">
+                <span class="searchTitle">Search:</span>
+                <input type="search" id="searchid" class="searchInput">
+            </form>
+            <div class="filterstatus">
+                <span class="filterTitle">Filter</span>
+                <select id="todoSelect">
+                    <option value="all">All</option>
+                    <option value="pendding">Pendding</option>
+                    <option value="success">Success</option>
+                </select>
+            </div>
+        </div>
+        <ul id="todolist" class="todolist"></ul>
+    </div>
+
+    <form id="todoFormId">
+        <div class="input_box">
+            <label for="textId" class="textLabel">What are you doing today ??</label>
+            <div class="input_box_sub">
+                <input type="text" id="textId" class="textInput">
+                <button type="submit" class="buttom_submit">Add</button>
+            </div>
+        </div>
+    </form>
+
+    <template id="li__todolist__template">
+        <li class="todo__item">
+            <span class="todo__item__title">todo title</span>
+            <div class="todo__item__action">
+                <button class="buttom buttom__edit"><i class="fa fa-edit icon"></i></button>
+                <button class="buttom buttom__finish"><i class="fa fa-check icon"></i></button>
+                <button class="buttom buttom__remove"><i class="fa fa-trash icon"></i></button>
+            </div>
+        </li>
+    </template>
+
+    <!-- Script -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
